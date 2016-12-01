@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="pie.js" type="text/javascript"></script>
+    <script src="controllers.js" type="text/javascript"></script>
+    <script src="//cdn.mathjax.org/mathjax/2.7-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.pie = window.pie || {};
+      window.pie.env = {mode: 'gather'};
+      window.pie.model = {'pies':[{'id':'1','pie':{'name':'corespring-function-entry-ng15','version':'1.0.0'},'comments':'this is shown in evaluate mode','correctResponse':{'equation':'4x+4'},'feedback':{'correctFeedbackType':'default','incorrectFeedbackType':'default'},'model':{'config':{'ignoreSpacing':true,'showFormattingHelp':true}}}]};
+      window.pie.session = [];
+      
+      document.addEventListener('pie.player-ready', function(event){
+        var player = event.target;
+        var pieController = new pie.Controller(window.pie.model, window['9c5ceb9ec6a54ce176d7dea419098724']);
+        
+        player.controller = pieController;
+        player.env = window.pie.env;
+        player.session = window.pie.session;
+        
+        var panel = document.querySelector('pie-control-panel');
+        panel.env = window.pie.env;
+        
+        pieController.getLanguages().then(function(l) {
+          panel.languages = l;
+        });
+      
+        panel.addEventListener('envChanged', function(event){
+          
+          player.env = event.target.env;
+          
+          if (event.target.env.mode === 'evaluate') {
+            player.getOutcome().then(function(outcome) {
+              panel.score = ' Score: ' + outcome.summary.percentage + '% Points: ' + outcome.summary.points + '/' + outcome.summary.maxPoints;
+            });
+          } else {
+            panel.score = '';
+          }
+      
+        });
+      });
+      
+    </script>
+  </head>
+  <body>
+    <pie-control-panel></pie-control-panel>
+    <pie-player><corespring-function-entry-ng15 pie-id="1"></corespring-function-entry-ng15></pie-player>
+  </body>
+</html>
