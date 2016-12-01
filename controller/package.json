@@ -4,6 +4,6 @@
   "private": true,
   "main": "src/controller.js",
   "dependencies": {
-    "corespring-legacy-function-entry": "PieLabs/corespring-legacy-function-entry"
+    "corespring-legacy-function-entry": "corespring/corespring-legacy-function-entry"
   }
 }
