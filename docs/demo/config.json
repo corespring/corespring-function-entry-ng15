@@ -1,12 +1,15 @@
 {
-  "pies": [
+  "langs": [
+    "en-US"
+  ],
+  "elements": {
+    "corespring-function-entry-ng15": "../.."
+  },
+  "models": [
     {
       "id": "1",
-      "pie": {
-        "name": "corespring-function-entry-ng15",
-        "version": "1.0.0"
-      },
-      "comments" : "this is shown in evaluate mode",
+      "element": "corespring-function-entry-ng15",
+      "comments": "this is shown in evaluate mode",
       "correctResponse" : {
         "equation": "4x+4"
       },
