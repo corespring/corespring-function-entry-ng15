@@ -9,20 +9,93 @@
     {
       "id": "1",
       "element": "corespring-function-entry-ng15",
-      "comments": "this is shown in evaluate mode",
-      "correctResponse" : {
-        "equation": "4x+4"
-      },
+      "weight" : 1.0,
       "feedback" : {
-        "correctFeedbackType": "default",
-        "incorrectFeedbackType": "default"
+        "correctFeedbackType" : "default",
+        "incorrectFeedbackType" : "default"
       },
-      "model": {
-        "config": {
-          "ignoreSpacing": true,
-          "showFormattingHelp": true
+      "correctResponse" : {
+        "equation" : "7/12"
+      },
+      "model" : {
+        "config" : {
+          "ignoreSpacing" : true,
+          "showFormattingHelp" : true
         }
-      }
+      },
+      "minimumWidth" : 100.0
+    },
+    {
+      "id": "2",
+      "element": "corespring-function-entry-ng15",
+      "feedback" : {
+        "correctFeedbackType" : "default",
+        "incorrectFeedbackType" : "default"
+      },
+      "correctResponse" : {
+        "equation" : "2/3"
+      },
+      "model" : {
+        "config" : {
+          "ignoreSpacing" : true,
+          "showFormattingHelp" : true
+        }
+      },
+      "minimumWidth" : 100.0
+    },
+    {
+      "id": "3",
+      "element": "corespring-function-entry-ng15",
+      "feedback" : {
+        "correctFeedbackType" : "default",
+        "incorrectFeedbackType" : "default"
+      },
+      "correctResponse" : {
+        "equation" : "3/4"
+      },
+      "model" : {
+        "config" : {
+          "ignoreSpacing" : true,
+          "showFormattingHelp" : true
+        }
+      },
+      "minimumWidth" : 100.0 
+    },
+    {
+      "id": "4",
+      "element": "corespring-function-entry-ng15",
+      "feedback" : {
+        "correctFeedbackType" : "default",
+        "incorrectFeedbackType" : "default"
+      },
+      "correctResponse" : {
+        "equation" : "7/8"
+      },
+      "model" : {
+        "config" : {
+          "ignoreSpacing" : true,
+          "showFormattingHelp" : true
+        }
+      },
+      "minimumWidth" : 100.0
+    },
+    {
+      "id": "5",
+      "element": "corespring-function-entry-ng15",
+      "feedback" : {
+        "correctFeedbackType" : "default",
+        "incorrectFeedbackType" : "default"
+      },
+      "correctResponse" : {
+        "equation" : "7/9"
+      },
+      "model" : {
+        "config" : {
+          "ignoreSpacing" : true,
+          "showFormattingHelp" : true
+        }
+      },
+      "minimumWidth" : 100.0
     }
   ]
 }
