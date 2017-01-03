@@ -6,7 +6,8 @@ import legacyController from 'corespring-legacy-function-entry/src/server/index'
  */
 
 let createOutcome = (question, session) => {
-  return legacyController.createOutcome(question, session.value.answers, {
+  let answers = (session && session.value) ? session.value.answers : undefined;
+  return legacyController.createOutcome(question, answers, {
     showFeedback: true,
     highlightCorrectResponse: true,
     highlightUserResponse: true
